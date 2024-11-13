@@ -24,7 +24,7 @@ interface TimeLeft {
 function DigitalCount({ value, label }: { value: string; label: string }) {
   return (
     <div>
-      <div className="lg:text-2xl">{label}</div>
+      <div className="text-xs md:text-base lg:text-2xl">{label}</div>
       <div
         className={`${grueneType.className} text-5xl md:text-7xl lg:text-9xl`}
       >
