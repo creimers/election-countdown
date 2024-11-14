@@ -3,9 +3,9 @@ import { grueneType } from "@/lib/font";
 
 export default function Home() {
   return (
-    <div className="space-y-12 lg:space-y-24 pt-24">
+    <div className="space-y-8 lg:space-y-16 pt-8 lg:pt-16">
       <div className="flex justify-center">
-        <div className={`${grueneType.className} space-y-3`}>
+        <div className={`${grueneType.className} space-y-1 lg:space-y-3`}>
           <div className="text-xl md:text-3xl lg:text-5xl lg:-translate-x-12">
             Countdown
           </div>
