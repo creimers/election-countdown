@@ -1,14 +1,9 @@
 "use client";
 
 import React, { useState } from "react";
-import localFont from "next/font/local";
-
-// Font files can be colocated inside of `app`
-const grueneType = localFont({
-  src: [{ path: "./gruene-type.woff2" }],
-  display: "swap",
-});
 import { useInterval } from "react-use";
+
+import { grueneType } from "@/app/page";
 
 type Props = {
   targetDate: string;
@@ -24,7 +19,9 @@ interface TimeLeft {
 function DigitalCount({ value, label }: { value: string; label: string }) {
   return (
     <div>
-      <div className="text-xs md:text-base lg:text-2xl">{label}</div>
+      <div className="text-xs md:text-base lg:text-2xl text-lime-500">
+        {label}
+      </div>
       <div
         className={`${grueneType.className} text-5xl md:text-7xl lg:text-9xl`}
       >
