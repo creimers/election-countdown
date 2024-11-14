@@ -1,11 +1,5 @@
-import localFont from "next/font/local";
 import Countdown from "@/components/countdown";
-
-// Font files can be colocated inside of `app`
-export const grueneType = localFont({
-  src: [{ path: "./gruene-type.woff2" }],
-  display: "swap",
-});
+import { grueneType } from "@/lib/font";
 
 export default function Home() {
   return (

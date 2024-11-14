@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { useInterval } from "react-use";
 
-import { grueneType } from "@/app/page";
+import { grueneType } from "@/lib/font";
 
 type Props = {
   targetDate: string;
